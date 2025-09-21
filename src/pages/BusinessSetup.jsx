@@ -210,16 +210,22 @@ export default function BusSetup() {
   return (
     <main ref={container} className="w-full home relative kkfont normal">
       {/* Section 1 - No animations */}
-      <section className="section1 w-screen h-screen bg-white z-0 overflow-hidden text-3xl">
-        <div className="text kkfont normal w-700 text-left absolute mt-24 text-3xl z-10 lg:text-5xl w-screen bg-white p-4 lg:ml-0 lg:left-0">
+      <section className="section1 w-screen h-screen bg-white z-0 overflow-hidden">
+        <div className="text kkfont normal text-left absolute bottom-0 left-0 right-0 p-4 text-2xl sm:text-3xl lg:text-5xl z-10 bg-white">
           <p>Business Setup In Emirates </p>
           <p className="text-[#1D7CB9] mt-2">And In Saudi Arabia</p>
         </div>
 
-        <img
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="z-10 w-full h-full object-cover object-center"
-          src="map.png"
-        />
+        >
+          <source src="saudi.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </section>
 
       {/* Combined Video Sections Container */}
@@ -245,12 +251,12 @@ export default function BusSetup() {
             preload="auto"
           />
 
-          <div className="absolute w-screen text-white top-0 mt-12 text-2xl p-4 flex flex-col items-center justify-center h-full">
+          <div className="absolute w-screen text-white top-0 mt-8 sm:mt-12 text-lg sm:text-xl lg:text-2xl p-4 sm:p-6 flex flex-col items-center justify-center h-full">
             <div className="text-center max-w-4xl">
-              <h1 className="text-2xl mb-6 market-head lg:text-3xl">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl mb-4 sm:mb-6 market-head">
                 Deep Market Expertise in Saudi Arabia & UAE
               </h1>
-              <p className="text-base market-body lg:text-[1.2rem]">
+              <p className="text-sm sm:text-base lg:text-[1.2rem] market-body leading-relaxed">
                 With in-depth knowledge of two of the region's most dynamic
                 economies, we guide investors through the thriving markets of
                 Saudi Arabia and the UAE. Saudi Arabia, fueled by Vision 2030,
@@ -293,12 +299,12 @@ export default function BusSetup() {
             preload="auto"
           />
 
-          <div className="absolute w-screen text-white top-0 mt-12 text-2xl p-4 flex flex-col items-center justify-center h-full">
+          <div className="absolute w-screen text-white top-0 mt-8 sm:mt-12 text-lg sm:text-xl lg:text-2xl p-4 sm:p-6 flex flex-col items-center justify-center h-full">
             <div className="text-center max-w-4xl">
-              <h1 className="text-2xl mb-6 services-head lg:text-3xl">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl mb-4 sm:mb-6 services-head">
                 Comprehensive Business Setup Services
               </h1>
-              <p className="text-base services-body lg:text-[1.2rem]">
+              <p className="text-sm sm:text-base lg:text-[1.2rem] services-body leading-relaxed">
                 From company registration and licensing to banking solutions and
                 legal compliance, we provide end-to-end support for your
                 business establishment. Our services include trade license
@@ -319,28 +325,28 @@ export default function BusSetup() {
           className="section5 absolute w-screen h-screen z-50 bg-[#1D7CB9]"
         >
           <div className="flex items-center justify-center h-full">
-            <div className="text-center text-white p-8 max-w-4xl">
-              <h1 className="text-4xl mb-6 font-bold values-head lg:text-5xl">
+            <div className="text-center text-white p-4 sm:p-6 lg:p-8 max-w-4xl">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl mb-4 sm:mb-6 font-bold values-head">
                 Our Core Values
               </h1>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                <div className="p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-sm">
-                  <h3 className="text-xl mb-4 font-semibold lg:text-2xl">Excellence</h3>
-                  <p className="text-lg">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mt-8 sm:mt-12">
+                <div className="p-4 sm:p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-sm">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl mb-3 sm:mb-4 font-semibold">Excellence</h3>
+                  <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
                     We deliver exceptional service quality and maintain the
                     highest standards in everything we do.
                   </p>
                 </div>
-                <div className="p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-sm">
-                  <h3 className="text-xl mb-4 font-semibold lg:text-2xl">Trust</h3>
-                  <p className="text-lg">
+                <div className="p-4 sm:p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-sm">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl mb-3 sm:mb-4 font-semibold">Trust</h3>
+                  <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
                     Building lasting relationships through transparency,
                     reliability, and honest communication.
                   </p>
                 </div>
-                <div className="p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-sm">
-                  <h3 className="text-xl mb-4 font-semibold lg:text-2xl">Innovation</h3>
-                  <p className="text-lg">
+                <div className="p-4 sm:p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-sm">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl mb-3 sm:mb-4 font-semibold">Innovation</h3>
+                  <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
                     Embracing cutting-edge solutions and staying ahead of market
                     trends for our clients.
                   </p>

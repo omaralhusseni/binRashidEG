@@ -183,7 +183,7 @@ const BusinessSolutions = () => {
   return (
     <main ref={containerRef} className="w-full relative kkfont normal">
       {/* Hero Section */}
-      <section ref={heroRef} className="hero-section h-screen bg-gradient-to-br from-[#1D7CB9] to-[#0F4A6B] flex items-center justify-center relative overflow-hidden">
+      <section ref={heroRef} className="hero-section h-screen bg-gradient-to-br from-[#0F4A6B] to-[#1D7CB9] flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-black bg-opacity-15"></div>
         
         {/* Professional hexagon pattern */}
@@ -195,35 +195,37 @@ const BusinessSolutions = () => {
           </div>
         </div>
         
-        <div className="relative z-10 text-center text-white px-8 max-w-6xl">
-          <h1 className="hero-title text-6xl md:text-8xl font-light tracking-tight mb-8">
+        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <h1 className="hero-title text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light tracking-tight mb-6 sm:mb-8 leading-tight">
             We solve your{" "}
             <span className="problem-text text-yellow-400 inline-block font-medium">
               {problems[currentProblem]}
             </span>
             <br />problems
           </h1>
-          <p className="hero-subtitle text-xl md:text-2xl font-light opacity-90 max-w-4xl mx-auto leading-relaxed">
+          <p className="hero-subtitle text-lg sm:text-xl md:text-2xl lg:text-3xl font-light opacity-90 max-w-4xl mx-auto leading-relaxed mt-6">
             Comprehensive business solutions designed to<br />transform challenges into opportunities
           </p>
         </div>
       </section>
 
       {/* Methodology Section with Content-Driven Transitions */}
-      <section ref={pinnedSectionRef} className="methodology-section min-h-screen bg-gradient-to-br from-blue-900 to-indigo-900 flex items-center justify-center relative overflow-hidden">
+      <section ref={pinnedSectionRef} className="methodology-section min-h-screen bg-gradient-to-br from-[#0F4A6B] to-[#1D7CB9] flex items-center justify-center relative overflow-hidden">
         
         
-        <div className="text-center text-white px-8 max-w-6xl relative z-10">
-          <div className="methodology-content flex flex-col items-center justify-center space-y-8">
-            <h2 className="text-5xl md:text-6xl font-light mb-12 tracking-tight text-center">Our Methodology</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
+        <div className="text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
+          <div className="methodology-content flex flex-col items-center justify-center space-y-6 sm:space-y-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-8 sm:mb-12 tracking-tight text-center">Our Methodology</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-5xl">
               {methodologyPhases.map((phase, index) => (
-                <div key={index} className="methodology-phase bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8 border border-white border-opacity-20 relative overflow-hidden">
-                  <div className="phase-bg absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500 opacity-20 scale-100"></div>
+                <div key={index} className="methodology-phase bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 sm:p-6 lg:p-8 border border-white border-opacity-20 relative overflow-hidden">
+                  <div className="phase-bg absolute inset-0 bg-gradient-to-br from-[#0F4A6B] to-[#1D7CB9] opacity-20 scale-100"></div>
                   <div className="relative z-10">
-                    <div className="w-16 h-16 bg-blue-500 bg-opacity-30 rounded-full mb-6 mx-auto"></div>
-                    <h3 className="text-2xl font-bold mb-4 text-center">{phase.title}</h3>
-                    <p className="text-gray-200 text-center leading-relaxed">{phase.description}</p>
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white bg-opacity-20 rounded-full mb-4 sm:mb-6 mx-auto flex items-center justify-center">
+                      <span className="text-2xl font-light">0{index + 1}</span>
+                    </div>
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 text-center">{phase.title}</h3>
+                    <p className="text-sm sm:text-base text-gray-200 text-center leading-relaxed">{phase.description}</p>
                   </div>
                 </div>
               ))}
@@ -234,25 +236,25 @@ const BusinessSolutions = () => {
 
       {/* Reasons Section */}
       <section ref={reasonsRef} className="reasons-section min-h-screen bg-white flex items-center justify-center relative">
-        <div className="max-w-7xl mx-auto px-8 w-full">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-6 tracking-tight">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-6 sm:mb-8 tracking-tight">
               Why You Need<br />Business Solutions
             </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+            <div className="w-24 sm:w-32 h-0.5 bg-gradient-to-r from-[#0F4A6B] to-[#1D7CB9] mx-auto"></div>
           </div>
           
-          <div className="reasons-content flex flex-col items-center justify-center space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl">
+          <div className="reasons-content flex flex-col items-center justify-center space-y-6 sm:space-y-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-6xl">
               {whyChooseReasons.map((reason, index) => (
-                <div key={index} className="reason-card bg-white rounded-xl shadow-lg p-8 text-center">
-                  <div className="w-16 h-16 bg-[#1D7CB9] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">
+                <div key={index} className="reason-card bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 text-center">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#0F4A6B] text-white rounded-full flex items-center justify-center text-lg sm:text-xl font-light mx-auto mb-4 sm:mb-6">
                     {String(index + 1).padStart(2, '0')}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">
                     {reason.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     {reason.description}
                   </p>
                 </div>
@@ -267,11 +269,11 @@ const BusinessSolutions = () => {
 
       {/* Sliding Business Section */}
       <div className="relative h-screen">
-        <section ref={slidingSectionRef} className="absolute w-full h-full bg-gradient-to-r from-green-600 to-blue-700 flex items-center justify-center text-white">
-          <div className="text-center px-8 max-w-5xl">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8">Transform Your Business Today</h2>
-            <p className="text-xl md:text-2xl opacity-90 mb-12">Partner with us to unlock your business potential and achieve sustainable growth through our comprehensive solutions.</p>
-            <button className="bg-white text-blue-700 px-12 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
+        <section ref={slidingSectionRef} className="absolute w-full h-full bg-gradient-to-r from-[#0F4A6B] to-[#1D7CB9] flex items-center justify-center text-white">
+          <div className="text-center px-4 sm:px-6 lg:px-8 max-w-5xl">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-light mb-6 sm:mb-8 leading-tight">Transform Your Business Today</h2>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl opacity-90 mb-8 sm:mb-12 leading-relaxed">Partner with us to unlock your business potential and achieve sustainable growth through our comprehensive solutions.</p>
+            <button className="bg-white text-[#0F4A6B] px-8 sm:px-10 lg:px-14 py-3 sm:py-4 rounded-lg text-sm sm:text-base lg:text-lg font-light tracking-wide hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
               Get Started Now
             </button>
           </div>
@@ -279,13 +281,13 @@ const BusinessSolutions = () => {
       </div>
 
       {/* Solutions Description Section */}
-      <section ref={solutionsRef} className="solutions-section min-h-screen bg-gradient-to-r from-gray-50 to-gray-100 flex items-center justify-center relative">
-        <div className="max-w-6xl mx-auto px-8 text-center w-full solutions-content">
-          <h2 className="text-5xl md:text-6xl font-light mb-8 text-gray-900 tracking-tight">
+      <section ref={solutionsRef} className="solutions-section min-h-screen bg-white flex items-center justify-center relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full solutions-content">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light mb-6 sm:mb-8 text-gray-900 tracking-tight">
             360° Business Solutions
           </h2>
-          <div className="solutions-line w-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-12"></div>
-          <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto font-light">
+          <div className="solutions-line w-0 h-0.5 bg-gradient-to-r from-[#0F4A6B] to-[#1D7CB9] mx-auto mb-8 sm:mb-12"></div>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto font-light">
             At BinRashid Egypt, we provide comprehensive business solutions across all critical areas—from financial 
             management and legal consultation to technology development and strategic marketing. Our integrated approach 
             ensures your business operates efficiently and achieves sustainable growth.
@@ -295,23 +297,23 @@ const BusinessSolutions = () => {
 
       {/* Services Grid Section */}
       <section className="min-h-screen bg-white flex items-center justify-center relative">
-        <div className="max-w-7xl mx-auto px-8 w-full">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-6 tracking-tight">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-6 sm:mb-8 tracking-tight">
               Our Service Portfolio
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+            <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
           </div>
           
-          <div className="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+          <div className="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 relative">
             {services.map((service, index) => (
               <div key={index} className="service-card group">
-                <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-[#1D7CB9] transform hover:-translate-y-2">
-                  <div className={`w-16 h-16 ${service.color} rounded-full mb-6 group-hover:scale-110 transition-transform duration-300`}></div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-[#1D7CB9] transition-colors duration-300">
+                <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-4 sm:p-6 lg:p-8 border border-gray-100 hover:border-[#1D7CB9] transform hover:-translate-y-2">
+                  <div className={`w-12 h-12 sm:w-16 sm:h-16 ${service.color} rounded-full mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}></div>
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 group-hover:text-[#1D7CB9] transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <div className="w-12 h-1 bg-[#1D7CB9] group-hover:w-full transition-all duration-300"></div>
+                  <div className="w-8 sm:w-12 h-1 bg-[#1D7CB9] group-hover:w-full transition-all duration-300"></div>
                 </div>
               </div>
             ))}
@@ -320,15 +322,15 @@ const BusinessSolutions = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-[#1D7CB9] text-white">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+      <section className="py-12 sm:py-16 lg:py-20 bg-[#1D7CB9] text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8">
             Ready to Transform Your Business?
           </h2>
-          <p className="text-xl mb-12 opacity-90">
+          <p className="text-base sm:text-lg lg:text-xl mb-8 sm:mb-12 opacity-90 leading-relaxed">
             Let's discuss how our comprehensive solutions can address your specific challenges and drive sustainable growth.
           </p>
-          <button className="bg-white text-[#1D7CB9] px-12 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105">
+          <button className="bg-white text-[#1D7CB9] px-6 sm:px-8 lg:px-12 py-3 sm:py-4 rounded-lg text-sm sm:text-base lg:text-lg font-semibold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105">
             Get Your Free Consultation
           </button>
         </div>
